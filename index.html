@@ -23,7 +23,10 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <!-- Vercel Web Analytics (privacy-friendly, no cookies) -->
-<script defer src="/_vercel/insights/script.js"></script>
+<script type="module">
+  import { inject } from 'https://esm.sh/@vercel/analytics@1/?bundle';
+  inject();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
