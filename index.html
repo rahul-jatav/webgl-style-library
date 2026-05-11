@@ -20,6 +20,70 @@
 <meta name="twitter:description" content="Three rendering paradigms — liquid chrome, bioluminescence, painted landscape. Tune chaos, speed, density and warmth in browser, then copy working three.js code into your project.">
 <meta name="twitter:image" content="https://webgl-style-library.vercel.app/og-image.png">
 
+<link rel="canonical" href="https://webgl-style-library.vercel.app/">
+<meta name="author" content="Rahul Jatav">
+<meta name="keywords" content="WebGL, three.js, creative coding, raymarched SDF, liquid metal, bioluminescence, painterly NPR, generative art, shader, GLSL, design system, web demo">
+<meta name="robots" content="index, follow">
+
+<!-- Structured data: WebApplication / CreativeWork -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "WebGL Style Library",
+  "alternateName": "STYLE LIBRARY",
+  "url": "https://webgl-style-library.vercel.app/",
+  "description": "Three live WebGL rendering styles — raymarched liquid chrome (Mercuria), bioluminescent dither (Abyss), and painterly NPR landscape (Brushfield). Tune chaos, speed, density, and warmth in real time, then copy production-ready three.js module code.",
+  "image": "https://webgl-style-library.vercel.app/og-image.png",
+  "applicationCategory": "DesignApplication",
+  "applicationSubCategory": "Creative Coding",
+  "operatingSystem": "Any (modern browser with WebGL2)",
+  "browserRequirements": "Requires WebGL2",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Rahul Jatav"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Rahul Jatav"
+  },
+  "keywords": "WebGL, three.js, raymarched SDF, liquid metal, bioluminescence, painterly NPR, Kuwahara filter, Sobel edges, generative art, shader playground",
+  "featureList": [
+    "Three real-time WebGL rendering styles",
+    "Live parameter tuning (chaos, speed, density, warmth)",
+    "Six presets per style",
+    "Copy production-ready three.js module code",
+    "Mobile responsive",
+    "Zero dependencies beyond three.js + Tweakpane"
+  ],
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "Mercuria",
+      "description": "Raymarched SDF liquid chrome — seven metallic globes melt under invisible gravity, no textures, only math.",
+      "genre": "Generative 3D"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Abyss",
+      "description": "Displaced icosphere with bioluminescent particle field, 8-bit Bayer dither, soft scanlines, chromatic aberration.",
+      "genre": "Generative 3D"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Brushfield",
+      "description": "Low-poly 3D landscape passed through a painterly post-process — Kuwahara filter, Sobel edge outlines, posterization, paper grain.",
+      "genre": "Painterly NPR"
+    }
+  ]
+}
+</script>
+
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <!-- Vercel Web Analytics (privacy-friendly, no cookies) -->
@@ -746,6 +810,51 @@ body.panel-collapsed .info{max-height:calc(100vh - 240px)}
 </style>
 </head>
 <body class="style-0">
+
+<!-- SEO content: visible to crawlers and screen readers; hidden from sighted users since the canvas tells the story visually -->
+<div class="seo-only" aria-hidden="false" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+  <h1>WebGL Style Library — three real-time rendering styles for the web</h1>
+  <p>An interactive WebGL playground featuring three live rendering paradigms built in three.js. Tune the parameters of each style in real time, see the result instantly, then copy a self-contained three.js module to drop into any project. Built with raymarching, post-processing shaders, and procedural geometry — no images, no textures, only math.</p>
+
+  <article>
+    <h2>Mercuria — Raymarched SDF Liquid Chrome</h2>
+    <p>Seven chrome globes drift and melt into each other under invisible gravity. Zero polygons — the GPU traces rays through a field of signed distance functions, smoothly merging seven metaballs each frame. Reflections are procedural; there is no environment map, only math. The mood is cold, contemplative, premium. Use it on AI-brand heroes, fintech, luxury landing pages, or anywhere you would otherwise be stuck shopping for stock photography.</p>
+    <ul>
+      <li>Raymarched SDF · liquid metal · zero polygons</li>
+      <li>Seven spheres melted via smooth blending</li>
+      <li>Reflections built from procedural sky · no environment image</li>
+      <li>Slow camera orbit · fresnel rim · soft glints</li>
+      <li>Tunes from cold mirror to molten copper</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Abyss — Bioluminescent Icosphere with 8-bit Dither</h2>
+    <p>A creature of light suspended in a field of drifting particles, viewed through 8-bit dither and a faint CRT scanline. A stacked-noise icosphere ringed by a 4,500-point bioluminescent particle field, post-processed with Bayer 8×8 ordered dither, scanlines, and chromatic aberration. Built to react to sound, motion, or any signal you wire up. Sits at the crossing of 1980s sci-fi nostalgia and contemporary brutalism. Use it for music sites, podcasts, gaming, immersive editorial — anywhere the page should breathe.</p>
+    <ul>
+      <li>Displaced icosphere + particle field + dither pass</li>
+      <li>Glowing creature warped by layered noise</li>
+      <li>8 000-dot bioluminescent particle drift</li>
+      <li>Bayer 8×8 ordered dither · soft halo · selective bloom</li>
+      <li>Idle pulse stands in until you wire real audio</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Brushfield — Painterly NPR Landscape</h2>
+    <p>A real 3D landscape passed through a painterly filter so it reads as illustration with motion. Low-poly mountains under a dusk sky, regions smoothed into brushstrokes by a four-quadrant Kuwahara filter, edges hardened into dark outlines by a Sobel operator, color posterized, paper grain pressed across the whole frame. Warm, retrospective, slow. Use it for narrative sites, slow-cinema portfolios, travel, books, or any editorial page that wants the feel of hand-craft without giving up motion.</p>
+    <ul>
+      <li>Polygon scene · painterly post-process</li>
+      <li>Low-poly cone mountains · flat-shaded</li>
+      <li>Kuwahara filter — softens regions like brushstrokes</li>
+      <li>Sobel edges become dark outlines</li>
+      <li>7-tone posterize · two-octave paper grain · warm/cool split-tone</li>
+    </ul>
+  </article>
+
+  <p><strong>Stack:</strong> three.js r160, custom GLSL shaders, Tweakpane for the parameter panel, IBM Plex Sans display + monospace. Single static HTML file, no build step, MIT-friendly approach. Built by <a href="https://github.com/rahul-jatav">Rahul Jatav</a>.</p>
+  <p><strong>Keywords:</strong> WebGL demo, three.js examples, raymarched SDF, liquid metal shader, signed distance field, bioluminescent particles, Kuwahara filter, Sobel edge detection, painterly post-process, generative art, creative coding playground, GLSL fragment shader, shader playground, procedural rendering, real-time graphics.</p>
+</div>
 
 <!-- LOADER — three cards each holding one digit, flip to style previews, tap to enter -->
 <div class="loader" id="loader">

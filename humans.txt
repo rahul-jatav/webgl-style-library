@@ -1,0 +1,10 @@
+/* TEAM */
+Designer & Builder: Rahul Jatav
+GitHub: github.com/rahul-jatav
+Location: India
+
+/* SITE */
+Last update: 2026-05-11
+Standards: HTML5, CSS3, WebGL2, ES Modules
+Components: three.js r160, Tweakpane v4, Orbitron + Rajdhani (Google Fonts), Phosphor Icons
+Software: VS Code, Figma, Claude
